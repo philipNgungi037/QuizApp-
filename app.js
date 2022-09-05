@@ -53,43 +53,43 @@ showQuestion = questions => {
         document.querySelector('#app').appendChild(questionHTML);
     })
 }
-// selectAnswer = (e) => {
-//     if (document.querySelector('.active')) {
-//         const activeAnswer = document.querySelector('.active');
-//         activeAnswer.classList.remove('active');
-//     }
+selectAnswer = (e) => {
+    if (document.querySelector('.active')) {
+        const activeAnswer = document.querySelector('.active');
+        activeAnswer.classList.remove('active');
+    }
 
-//     e.target.classList.add('active');
-// }
-// validateAnswer = () => {
-//     if (document.querySelector('.questions .active')) {
+    e.target.classList.add('active');
+}
+validateAnswer = () => {
+    if (document.querySelector('.questions .active')) {
 
-//         verifyAnswer();
+        verifyAnswer();
 
-//     } else {
-//         const errorDiv = document.createElement('div');
-//         errorDiv.classList.add('alert', 'alert-danger', 'col-md-6');
-//         errorDiv.textContent = "Please select Answer";
-//         const questionsDiv = document.querySelector('.questions');
-//         questionsDiv.appendChild(errorDiv);
+    } else {
+        const errorDiv = document.createElement('div');
+        errorDiv.classList.add('alert', 'alert-danger', 'col-md-6');
+        errorDiv.textContent = "Please select Answer";
+        const questionsDiv = document.querySelector('.questions');
+        questionsDiv.appendChild(errorDiv);
 
-//         setTimeout(() => {
-//             document.querySelector('.alert-danger').remove();
-//         }, 2000);
+        setTimeout(() => {
+            document.querySelector('.alert-danger').remove();
+        }, 2000);
 
-//     }
-// }
-// verifyAnswer = () => {
-//     const userAnswer = document.querySelector('.questions .active');
-//     if (userAnswer.textContent === rightAns) {
-//         rightNumber++;
-//     } else {
-//         falseNumber++;
-//     }
+    }
+}
+verifyAnswer = () => {
+    const userAnswer = document.querySelector('.questions .active');
+    if (userAnswer.textContent === rightAns) {
+        rightNumber++;
+    } else {
+        falseNumber++;
+    }
 
-//     const app = document.querySelector('#app');
-//     while (app.firstChild) {
-//         app.removeChild(app.firstChild);
-//     }
-//     addQuestion();
-// }
+    const app = document.querySelector('#app');
+    while (app.firstChild) {
+        app.removeChild(app.firstChild);
+    }
+    addQuestion();
+}
