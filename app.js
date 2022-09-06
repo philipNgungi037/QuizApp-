@@ -13,7 +13,7 @@ eventListeners = () => {
 
 }
 addQuestion = () => {
-    const url = 'https://opentdb.com/api.php?amount=10&category=25';
+    const url = 'https://opentdb.com/api.php?amount=5&category=18';
     fetch(url)
         .then(data => data.json())
         .then(result => showQuestion(result.results));
