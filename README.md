@@ -6,6 +6,9 @@ Technologies Used
 
 I've used HTML, CSS, and JS. The JS plays the main role and I've taken the local data as JSON Format. If you want to use API source data as an input, then use the Fetch method to get the JSON data from the API source and then feed that data as input.
 
+LIVE LINK
+https://philipngungi037.github.io/QuizApp-/
+
 More Updates
 
 Follow me on LinkedIn to get the latest update about features, code, and more. If you like this project give a star to this repo.
